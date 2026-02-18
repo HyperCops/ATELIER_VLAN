@@ -181,7 +181,7 @@ Le masque définit la taille du réseau, ça permet au PC de savoir si l'adresse
 
 S'ils étaient sur le même réseau, les PC penseraient qu'ils sont voisins et essaieraient de communiquer en direct sans passer par la gateway, mais le switch va tout bloquer car ils ne sont pas dans le même VLAN.
 
-5. Pourquoi un trunk est-il nécessaire ?
+4. Pourquoi un trunk est-il nécessaire ?
 
 Le trunk permet de faire passer le trafic des 2 VLAN dans le seul câble qui est branché au routeur, sinon il faudrait tirer un câble physique pour chaque VLAN.
 
