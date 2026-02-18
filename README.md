@@ -170,6 +170,7 @@ PC1 → PC3
 # ❓ Questions de réflexion
 
 1. Pourquoi PC1 ne voit-il pas PC3 sans routeur ?
+
 Comme le routeur héberge les deux passerelles (gateways) des deux VLAN, les PC ne sauraient pas où envoyer les paquets pour joindre l'autre VLAN s'il n'y avait pas de routeur.
 
 2. Quel rôle joue le masque /24 ? -> Répondez directement sur ce Readme.md  
