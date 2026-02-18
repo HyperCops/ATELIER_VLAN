@@ -197,12 +197,15 @@ Changer VLAN 10 en :
 
 Questions :
 - Combien d’hôtes max ?
+
 Le masque /25 laisse 7 bits pour les hôtes, Cela fait 126 adresses utilisables pour les PC (128 moins l'adresse réseau et le broadcast). 
 
 - Quelle plage IP valide ?
+
 De 192.168.10.1 à 192.168.10.126
 
 - Peut-on encore communiquer avec VLAN 20 ?
+
 Oui, car le routeur fait le lien entre les réseaux peu importe leur taille, mais si on ne change pas le masque sur la gateway (interface du routeur) et sur les PC, le ping ne marchera pas.
 
 ---
