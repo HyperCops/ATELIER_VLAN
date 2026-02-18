@@ -163,7 +163,7 @@ PC1 → PC2
 PC1 → PC3  
 👉 Fonctionne uniquement grâce au routeur
 
-* * Copie d'écran ici * *  
+![Screenshot Actions](Capture/PC1-PC3.png)
   
 ---
 
