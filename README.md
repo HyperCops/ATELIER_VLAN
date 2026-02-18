@@ -175,15 +175,15 @@ Comme le routeur héberge les deux passerelles (gateways) des deux VLAN, les PC 
 
 2. Quel rôle joue le masque /24 ?
 
-Le masque /24 détermine que les trois premiers octets de l'adresse identifient le réseau tandis que le dernier identifie l'hôte, ce qui permet à la machine de savoir si le destinataire est local ou s'il faut passer par la passerelle par défaut.
+Le masque définit la taille du réseau, ça permet au PC de savoir si l'adresse qu'il veut ping est locale ou s'il doit envoyer le paquet à la gateway pour sortir.
 
 3. Que se passe-t-il si VLAN 10 et VLAN 20 ont le même réseau IP ?
 
-La communication serait impossible car les machines tenteraient de se joindre directement par ARP en pensant être voisines alors que le switch les isole, et le routeur refuserait de gérer deux interfaces configurées sur le même sous-réseau logique.
+S'ils étaient sur le même réseau, les PC penseraient qu'ils sont voisins et essaieraient de communiquer en direct sans passer par la gateway, mais le switch va tout bloquer car ils ne sont pas dans le même VLAN.
 
 5. Pourquoi un trunk est-il nécessaire ?
 
-Le trunk est indispensable pour transporter le trafic de plusieurs VLANs distincts sur un unique câble physique en utilisant le marquage des trames, ce qui évite de devoir connecter un câble par VLAN entre le switch et le routeur.
+e trunk permet de faire passer le trafic des 2 VLAN dans le seul câble qui est branché au routeur, sinon il faudrait tirer un câble physique pour chaque VLAN.
 
 ---
 
