@@ -173,9 +173,17 @@ PC1 → PC3
 
 Comme le routeur héberge les deux passerelles (gateways) des deux VLAN, les PC ne sauraient pas où envoyer les paquets pour joindre l'autre VLAN s'il n'y avait pas de routeur.
 
-2. Quel rôle joue le masque /24 ? -> Répondez directement sur ce Readme.md  
-4. Que se passe-t-il si VLAN 10 et VLAN 20 ont le même réseau IP ? -> Répondez directement sur ce Readme.md  
-5. Pourquoi un trunk est-il nécessaire ? -> Répondez directement sur ce Readme.md
+2. Quel rôle joue le masque /24 ?
+
+Le masque /24 détermine que les trois premiers octets de l'adresse identifient le réseau tandis que le dernier identifie l'hôte, ce qui permet à la machine de savoir si le destinataire est local ou s'il faut passer par la passerelle par défaut.
+
+3. Que se passe-t-il si VLAN 10 et VLAN 20 ont le même réseau IP ?
+
+La communication serait impossible car les machines tenteraient de se joindre directement par ARP en pensant être voisines alors que le switch les isole, et le routeur refuserait de gérer deux interfaces configurées sur le même sous-réseau logique.
+
+5. Pourquoi un trunk est-il nécessaire ?
+
+Le trunk est indispensable pour transporter le trafic de plusieurs VLANs distincts sur un unique câble physique en utilisant le marquage des trames, ce qui évite de devoir connecter un câble par VLAN entre le switch et le routeur.
 
 ---
 
