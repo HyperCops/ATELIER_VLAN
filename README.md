@@ -170,8 +170,9 @@ PC1 → PC3
 # ❓ Questions de réflexion
 
 1. Pourquoi PC1 ne voit-il pas PC3 sans routeur ?
-Car le routeur héberge les 2 gateway des 2 VLAN, si il n'y avait pas de routeur les PC ne seront pas où aller pour ping l'autre VLAN.
-3. Quel rôle joue le masque /24 ? -> Répondez directement sur ce Readme.md  
+Comme le routeur héberge les deux passerelles (gateways) des deux VLAN, les PC ne sauraient pas où envoyer les paquets pour joindre l'autre VLAN s'il n'y avait pas de routeur.
+
+2. Quel rôle joue le masque /24 ? -> Répondez directement sur ce Readme.md  
 4. Que se passe-t-il si VLAN 10 et VLAN 20 ont le même réseau IP ? -> Répondez directement sur ce Readme.md  
 5. Pourquoi un trunk est-il nécessaire ? -> Répondez directement sur ce Readme.md
 
