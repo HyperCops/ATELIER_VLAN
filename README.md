@@ -183,7 +183,7 @@ S'ils étaient sur le même réseau, les PC penseraient qu'ils sont voisins et e
 
 5. Pourquoi un trunk est-il nécessaire ?
 
-e trunk permet de faire passer le trafic des 2 VLAN dans le seul câble qui est branché au routeur, sinon il faudrait tirer un câble physique pour chaque VLAN.
+Le trunk permet de faire passer le trafic des 2 VLAN dans le seul câble qui est branché au routeur, sinon il faudrait tirer un câble physique pour chaque VLAN.
 
 ---
 
